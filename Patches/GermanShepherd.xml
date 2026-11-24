@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- GermanShepherd: optional species, each checked individually.
+       Only adds VRE_Herd eligibility; does not grant training. -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="GermanShepherd"]/race[not(trainableTags)]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="GermanShepherd"]/race[not(trainableTags)]</xpath>
+      <value><trainableTags><li>VRE_Herd</li></trainableTags></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="GermanShepherd"]/race/trainableTags[not(li="VRE_Herd")]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="GermanShepherd"]/race/trainableTags[not(li="VRE_Herd")]</xpath>
+      <value><li>VRE_Herd</li></value>
+    </match>
+  </Operation>
+</Patch>

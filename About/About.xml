@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>VRE Corgis Herd Too</name>
+  <author>Draconomial</author>
+  <packageId>Draconomial.VRECorgisHerd</packageId>
+  <supportedVersions>
+    <li>1.7</li>
+  </supportedVersions>
+  <description>Adds VRE_Herd training eligibility to some canine races, including corgis. Does not grant or bypass training.</description>
+  <modDependencies>
+    <li>
+      <packageId>vanillaexpanded.ranching</packageId>
+      <displayName>Vanilla Ranching Expanded</displayName>
+      <downloadUrl>https://github.com/Vanilla-Expanded/VanillaRanchingExpanded</downloadUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>vanillaexpanded.ranching</li>
+  </loadAfter>
+</ModMetaData>

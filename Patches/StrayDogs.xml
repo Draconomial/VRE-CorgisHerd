@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- StrayDogs: optional species, each checked individually.
+       Only adds VRE_Herd eligibility; does not grant training. -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="SCBorderCollie"]/race[not(trainableTags)]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="SCBorderCollie"]/race[not(trainableTags)]</xpath>
+      <value><trainableTags><li>VRE_Herd</li></trainableTags></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="SCBorderCollie"]/race/trainableTags[not(li="VRE_Herd")]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="SCBorderCollie"]/race/trainableTags[not(li="VRE_Herd")]</xpath>
+      <value><li>VRE_Herd</li></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="SCCollie"]/race[not(trainableTags)]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="SCCollie"]/race[not(trainableTags)]</xpath>
+      <value><trainableTags><li>VRE_Herd</li></trainableTags></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="SCCollie"]/race/trainableTags[not(li="VRE_Herd")]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="SCCollie"]/race/trainableTags[not(li="VRE_Herd")]</xpath>
+      <value><li>VRE_Herd</li></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="SCOldEnglishSheepdog"]/race[not(trainableTags)]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="SCOldEnglishSheepdog"]/race[not(trainableTags)]</xpath>
+      <value><trainableTags><li>VRE_Herd</li></trainableTags></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="SCOldEnglishSheepdog"]/race/trainableTags[not(li="VRE_Herd")]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="SCOldEnglishSheepdog"]/race/trainableTags[not(li="VRE_Herd")]</xpath>
+      <value><li>VRE_Herd</li></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="SCWelshCorgi"]/race[not(trainableTags)]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="SCWelshCorgi"]/race[not(trainableTags)]</xpath>
+      <value><trainableTags><li>VRE_Herd</li></trainableTags></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="SCWelshCorgi"]/race/trainableTags[not(li="VRE_Herd")]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="SCWelshCorgi"]/race/trainableTags[not(li="VRE_Herd")]</xpath>
+      <value><li>VRE_Herd</li></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="StrayDogs_SwedishVallhund"]/race[not(trainableTags)]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="StrayDogs_SwedishVallhund"]/race[not(trainableTags)]</xpath>
+      <value><trainableTags><li>VRE_Herd</li></trainableTags></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="StrayDogs_SwedishVallhund"]/race/trainableTags[not(li="VRE_Herd")]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="StrayDogs_SwedishVallhund"]/race/trainableTags[not(li="VRE_Herd")]</xpath>
+      <value><li>VRE_Herd</li></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="SCStandardPoodle"]/race[not(trainableTags)]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="SCStandardPoodle"]/race[not(trainableTags)]</xpath>
+      <value><trainableTags><li>VRE_Herd</li></trainableTags></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="SCStandardPoodle"]/race/trainableTags[not(li="VRE_Herd")]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="SCStandardPoodle"]/race/trainableTags[not(li="VRE_Herd")]</xpath>
+      <value><li>VRE_Herd</li></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="StrayDogs_BerneseMountainDog"]/race[not(trainableTags)]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="StrayDogs_BerneseMountainDog"]/race[not(trainableTags)]</xpath>
+      <value><trainableTags><li>VRE_Herd</li></trainableTags></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="StrayDogs_BerneseMountainDog"]/race/trainableTags[not(li="VRE_Herd")]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="StrayDogs_BerneseMountainDog"]/race/trainableTags[not(li="VRE_Herd")]</xpath>
+      <value><li>VRE_Herd</li></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="SCSchnauzer"]/race[not(trainableTags)]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="SCSchnauzer"]/race[not(trainableTags)]</xpath>
+      <value><trainableTags><li>VRE_Herd</li></trainableTags></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="SCSchnauzer"]/race/trainableTags[not(li="VRE_Herd")]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="SCSchnauzer"]/race/trainableTags[not(li="VRE_Herd")]</xpath>
+      <value><li>VRE_Herd</li></value>
+    </match>
+  </Operation>
+</Patch>
