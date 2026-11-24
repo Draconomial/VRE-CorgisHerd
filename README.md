@@ -1,4 +1,4 @@
-# VRE Corgis Herd Too
+# VRE Corgis Herd
 
 A compatibility mod for **RimWorld 1.7** that lets more dogs learn **Herd** in [Vanilla Ranching Expanded](https://github.com/Vanilla-Expanded/VanillaRanchingExpanded).
 
